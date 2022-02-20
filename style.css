@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0, 5, 5, 10;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-share > img {
+    border: none;
+    border-radius: 50%;
+}
+
+.chat_body {
+    background-color: crimson;
+    padding: 50px;
+    height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.chat_send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+.chat_send > input {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+}
+
+.chat_send button {
+    background-color: cyan;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat_message {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 10px 0;
+}
+.ota-quti {
+    position: relative;
+}
+p.chat_message {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+}
+.ota-quti.active {
+    display: flex;
+    justify-content: right;
+    flex-direction: row-reverse;
+    /* background-color: white; */
+}
+.active > p {
+    background-color: white;
+    color: black;
+    position: relative;
+    overflow: auto;
+}
+/* .active > .date {
+    position: absolute !important; 
+    right: 0 !important; 
+    top: 20px !important; 
+    color: white; !important
+} */
+.date {
+    position: absolute;
+    /* top: 60%%; */
+    /* left: 25%; */
+    color: white;
+    top: 10px;
+  left: 30%;
+}
+
+.ota-quti.active .date{
+    color: red;
+    left: 75%;
+}
+.icons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.icons p {
+    cursor: pointer;
+}
